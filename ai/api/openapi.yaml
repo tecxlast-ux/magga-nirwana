@@ -1,0 +1,25 @@
+openapi: 3.0.0
+info:
+  title: Private AI Secure Network API
+  version: 0.1.0
+servers:
+  - url: https://api.example.com
+paths:
+  /reports:
+    get:
+      summary: List reports
+      responses:
+        '200':
+          description: Success
+  /reports/{report_id}:
+    get:
+      summary: Fetch a report
+      parameters:
+        - in: path
+          name: report_id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success

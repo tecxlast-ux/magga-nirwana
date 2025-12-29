@@ -1,0 +1,12 @@
+{
+  "report_id": "daily-2024-01-01",
+  "generated_at": "2024-01-01T08:00:00Z",
+  "summary": "Network healthy with minor latency spikes.",
+  "findings": [
+    {
+      "title": "Latency spike on internet-probe",
+      "detail": "Average latency increased to 120ms between 02:00-02:10 UTC.",
+      "severity": "warning"
+    }
+  ]
+}

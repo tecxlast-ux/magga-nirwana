@@ -1,0 +1,11 @@
+groups:
+  - name: packetloss
+    rules:
+      - alert: PacketLoss
+        expr: probe_success == 0
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Probe failed"
+          description: "Blackbox probe reports loss for 2 minutes."

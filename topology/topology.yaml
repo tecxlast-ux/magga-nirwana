@@ -1,0 +1,28 @@
+# Canonical topology definition for devices, links, and monitoring targets.
+devices:
+  - id: edge-router
+    role: edge
+    platform: routeros
+    mgmt_ip: 10.255.0.1
+  - id: core-switch
+    role: distribution
+    platform: switch
+    mgmt_ip: 10.255.0.2
+  - id: hq-ap-01
+    role: access-point
+    platform: ap
+    mgmt_ip: 10.255.0.10
+
+links:
+  - endpoints: [edge-router, core-switch]
+    type: wan
+  - endpoints: [core-switch, hq-ap-01]
+    type: lan
+
+targets:
+  icmp:
+    - host: 1.1.1.1
+      name: internet-probe
+  snmp:
+    - host: 10.255.0.1
+      profile: routeros
