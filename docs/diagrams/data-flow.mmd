@@ -1,0 +1,12 @@
+sequenceDiagram
+  participant Device
+  participant Exporter
+  participant Prometheus
+  participant AI
+  participant Dashboard
+
+  Device->>Exporter: Telemetry (SNMP/ICMP)
+  Exporter->>Prometheus: Metrics scrape
+  Prometheus->>Dashboard: Visualize metrics
+  Prometheus->>AI: Normalized telemetry
+  AI-->>Dashboard: Insights/alerts

@@ -1,0 +1,38 @@
+site_name: Private AI Secure Network
+site_description: Documentation for secure, AI-assisted network operations
+site_url: https://example.github.io/private-ai-secure-network
+repo_url: https://github.com/example/private-ai-secure-network
+site_dir: site
+docs_dir: docs
+nav:
+  - Home: index.md
+  - Project Tracking: project-tracking.md
+  - Scope & Acceptance:
+      - Scope: scope.md
+      - Acceptance Criteria: acceptance-criteria.md
+  - Architecture:
+      - Inventory: inventory.md
+      - IP Plan: ip-plan.md
+      - Topology Diagram: diagrams/topology.md
+      - Data Flow: diagrams/data-flow.md
+  - Runbooks:
+      - Network Hardening: runbooks/network-hardening.md
+      - Monitoring Operations: runbooks/monitoring-operations.md
+      - Incident Response: runbooks/incident-response.md
+      - Backup & Restore: runbooks/backup-restore.md
+  - Decisions:
+      - ADR Guide: decisions/README.md
+      - ADR Template: decisions/adr-template.md
+      - ADR-0001 Example: decisions/ADR-0001-example.md
+  - Risks:
+      - Risk Register: risk/risk-register.md
+      - Issue Log: risk/issue-log.md
+theme:
+  name: readthedocs
+markdown_extensions:
+  - tables
+  - toc:
+      permalink: true
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - assets/mermaid-init.js
