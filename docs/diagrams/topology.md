@@ -8,4 +8,6 @@ flowchart LR
   Switch --> Server[Mgmt/Monitoring]
 ```
 
-The topology diagram reflects WAN ingress to the edge router, core switching, and downstream access/management segments. Update `docs/diagrams/topology.mmd` when device roles or links change.
+The topology diagram reflects WAN ingress to the edge router, core switching,
+and downstream access/management segments. Update `docs/diagrams/topology.mmd`
+when device roles or links change.
