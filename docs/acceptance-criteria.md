@@ -1,6 +1,7 @@
 # Acceptance Criteria
 
 ## Phase gates
+
 - **Repository Foundation (M0)**
   - Required files present (`LICENSE`, `README.md`, `SECURITY.md`, `.editorconfig`).
   - Scope, risk register, and ADR process documented.
@@ -17,6 +18,7 @@
   - Account inventory template filled, MFA policy approved, migration plan documented.
 
 ## Definition of Done (per item)
+
 - Documentation updated with links to ADRs where decisions exist.
 - Risks logged or updated in `docs/risk/risk-register.md`.
 - Tests or validation scripts executed where applicable.
