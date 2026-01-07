@@ -1,7 +1,10 @@
 ---
 name: Decision
 about: Capture a design or architectural decision
-labels: decision
+title: ''
+labels: ''
+assignees: ''
+
 ---
 
 ## Context
