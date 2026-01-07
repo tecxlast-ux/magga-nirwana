@@ -8,4 +8,5 @@ groups:
           severity: warning
         annotations:
           summary: "High latency detected"
-          description: "Blackbox probe latency above 500ms for more than 5 minutes."
+          description: >-
+            Blackbox probe latency above 500ms for more than 5 minutes.
