@@ -29,7 +29,20 @@ identity controls for private environments.
 
 ## Public website
 
-The documentation in `docs/` is published automatically as a static site via MkDocs and GitHub Pages. To preview locally:
+The documentation in `docs/` is published automatically as a static site via MkDocs and GitHub Pages.
+
+### Enabling GitHub Pages
+
+To enable automatic deployment to GitHub Pages:
+
+1. Go to repository Settings > Pages
+2. Under "Source", select "GitHub Actions"
+3. Change `if: false` to `if: true` in `.github/workflows/pages.yml` (deploy job)
+4. Push to main branch to trigger deployment
+
+### Local preview
+
+To preview the documentation site locally:
 
 1. Install MkDocs: `pip install mkdocs`
 2. Start a live server from the repo root: `mkdocs serve`
