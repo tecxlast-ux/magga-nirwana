@@ -3,7 +3,8 @@ name: Validate YAML
 on:
   pull_request:
   push:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   yamllint:
