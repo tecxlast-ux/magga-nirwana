@@ -11,5 +11,5 @@ groups:
         annotations:
           summary: "Potential link flapping"
           description: >-
-            Link counters changing unexpectedly; verify physical
-            connections.
+            Link counters changing unexpectedly; verify
+            physical connections.
