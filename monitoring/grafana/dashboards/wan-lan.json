@@ -1,0 +1,15 @@
+{
+  "title": "WAN/LAN Overview",
+  "panels": [
+    {
+      "type": "graph",
+      "title": "Latency",
+      "targets": [{ "expr": "probe_duration_seconds" }]
+    },
+    {
+      "type": "stat",
+      "title": "Availability",
+      "targets": [{ "expr": "avg_over_time(probe_success[5m])" }]
+    }
+  ]
+}

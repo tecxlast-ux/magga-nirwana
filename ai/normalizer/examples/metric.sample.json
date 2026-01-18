@@ -1,0 +1,9 @@
+{
+  "device_id": "edge-router",
+  "metric": "latency_ms",
+  "timestamp": "2024-01-01T00:00:00Z",
+  "value": 42.5,
+  "labels": {
+    "probe": "internet-probe"
+  }
+}

@@ -1,0 +1,4 @@
+# Basic markdownlint configuration
+line-length:
+  line_length: 120
+  tables: false

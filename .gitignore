@@ -1,0 +1,16 @@
+# Editor
+*.swp
+*.swo
+.DS_Store
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+tmp/
+logs/
+site/

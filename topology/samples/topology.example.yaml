@@ -1,0 +1,19 @@
+# Example topology to guide population of topology.yaml.
+devices:
+  - id: branch-router
+    role: edge
+    platform: routeros
+    mgmt_ip: 10.255.1.1
+  - id: branch-ap
+    role: access-point
+    platform: ap
+    mgmt_ip: 10.255.1.10
+
+links:
+  - endpoints: [branch-router, branch-ap]
+    type: lan
+
+targets:
+  icmp:
+    - host: 8.8.8.8
+      name: google-dns

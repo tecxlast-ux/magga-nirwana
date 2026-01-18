@@ -1,0 +1,15 @@
+{
+  "title": "Device Health",
+  "panels": [
+    {
+      "type": "gauge",
+      "title": "Interface Status",
+      "targets": [{ "expr": "up" }]
+    },
+    {
+      "type": "graph",
+      "title": "CPU Utilization",
+      "targets": [{ "expr": "node_cpu_seconds_total" }]
+    }
+  ]
+}

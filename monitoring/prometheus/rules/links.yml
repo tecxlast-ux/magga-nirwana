@@ -1,0 +1,11 @@
+groups:
+  - name: links
+    rules:
+      - alert: LinkFlap
+        expr: changes(ifHCInOctets[5m]) > 10 and absent_over_time(ifOperStatus[5m]) == 0
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Potential link flapping"
+          description: "Link counters changing unexpectedly; verify physical connections."
