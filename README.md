@@ -1,4 +1,4 @@
-# MUD
+# Magga-Nirvana
 
 Repository template for a secure, AI-assisted network operations stack. Use
 this structure to document topology, monitoring, AI telemetry handling, and
